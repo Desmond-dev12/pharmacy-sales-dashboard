@@ -73,8 +73,7 @@ The dashboard expects a CSV file with columns such as:
 - Unit Price
 - Transaction ID
 - Rating
-
-If your CSV has slightly different column names, update them in the loading and analysis code before running the app.
+ 
 
 ## Business Use Case
 
