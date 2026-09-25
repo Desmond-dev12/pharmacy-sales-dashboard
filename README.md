@@ -92,6 +92,14 @@ This dashboard is useful for:
 - compare sales behavior across customer types
 - support inventory planning and marketing decisions
 
+## 👤 Author
+
+*Desmond Pimpong*
+
+## 📬 Contact
+
+- LinkedIn: https://linkedin.com/in/desmond-pimpong-563899433
+
 ## License
 
 This project is intended for learning, portfolio development, and business analytics practice.
