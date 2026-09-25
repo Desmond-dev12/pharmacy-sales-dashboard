@@ -1,4 +1,3 @@
-import os
 import streamlit as st
 import pandas as pd 
 import plotly.express as px
@@ -22,10 +21,10 @@ st.markdown("""
 
 @st.cache_data
 def load_data(file_path):
-    data = pd.read_csv(file_path, encoding= "latin")
+    data = pd.read_csv(file_path, encoding="latin")
     data.columns = data.columns.str.lower().str.strip().str.replace(" ", "_")
     data["date"] = pd.to_datetime(data["date"], errors="coerce").dt.date
-    data["unit_price"] = data["unit_price"].str.replace("GHS","").astype(float)
+    data["unit_price"] = data["unit_price"].str.replace("GHS", "").astype(float)
     data["quantity"] = pd.to_numeric(data["quantity"], errors="coerce")
     data["unit_price"] = data["unit_price"].fillna(data["unit_price"].mean())
 
@@ -35,11 +34,11 @@ def load_data(file_path):
     data["rating"] = data["rating"].fillna(data["rating"].mean())
     data = data.dropna(subset=["date"])
     data["total_amount"] = data["unit_price"] * data["quantity"]
-    
+
     return data
-data_folder = r"C:\Users\DELL\Desktop\UCC CODE PROJECTS"
-file_path = os.path.join(data_folder, "pharmacy-messy.csv")
+file_path = "pharmacy_messy.csv"
 data = load_data(file_path)
+
 st.sidebar.title("👨‍💻 Developer Profile")
 st.sidebar.write("*Desmond Pimpong*")
 st.sidebar.caption("Data Analyst &  Developer")
@@ -48,7 +47,7 @@ st.sidebar.markdown("---")
 
 # Quick links buttons
 st.sidebar.subheader("🔗 Links & Portfolio")
-st.sidebar.link_button("📂 GitHub Repository", "https://Desmond-dev12/pharmacy-sales-dashboard")
+st.sidebar.link_button("📂 GitHub Repository", "https://github.com/Desmond-dev12/pharmacy-sales-dashboard")
 st.sidebar.link_button("💼 LinkedIn Profile", "https://linkedin.com/in/desmond-pimpong-563899433")
 
 st.sidebar.markdown("---")
@@ -99,7 +98,7 @@ if filtered_data.empty:
 
 filtered_data["total_amount"] = filtered_data["total_amount"].round(2)
 filtered_data["total_amount"] = filtered_data["total_amount"].round(2)
-filtered_data["unit_price"] = filtered_data["unit_price"]
+filtered_data["unit_price"] = filtered_data["unit_price"].round(2)
 filtered_data["rating"] = filtered_data["rating"].round(2)
 filtered_data["branch"] = filtered_data["branch"]
 filtered_data["receipt_id"] = filtered_data["receipt_id"].round(2)
