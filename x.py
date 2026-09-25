@@ -36,7 +36,7 @@ def load_data(file_path):
     data["total_amount"] = data["unit_price"] * data["quantity"]
 
     return data
-file_path = "pharmacy_messy.csv"
+file_path = "pharmacy_messy1.csv"
 data = load_data(file_path)
 
 st.sidebar.title("👨‍💻 Developer Profile")
