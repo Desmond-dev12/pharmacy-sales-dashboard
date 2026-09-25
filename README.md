@@ -1,8 +1,8 @@
-# Retail Sales Analysis Dashboard
+# 📊 Retail Sales Analysis Dashboard
 
 An interactive Streamlit dashboard for exploring retail sales performance across branches, product categories, customer segments, and date ranges.
 
-## Overview
+## 🔎 Overview
 
 This project analyzes retail transaction data to help businesses understand:
 
@@ -14,7 +14,7 @@ This project analyzes retail transaction data to help businesses understand:
 
 The dashboard is designed to turn raw retail data into actionable business insights using Python, Pandas, Plotly, and Streamlit.
 
-## Features
+## ✨ Features
 
 - interactive sidebar filters for branch, category, customer type, gender, and date range
 - KPI cards for total sales, total quantity, average unit price, and total transactions
@@ -25,21 +25,21 @@ The dashboard is designed to turn raw retail data into actionable business insig
 - daily sales trend visualization
 - business insights and recommendations section
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - Python
 - Streamlit
 - Pandas
 - Plotly
 
-## Project Structure
+## 📁 Project Structure
 
 - `Retail.py` — main dashboard application
 - `requirements.txt` — project dependencies
 - `README.md` — project documentation
 - `retail_store_clean1.csv` — retail sales dataset used by the dashboard
 
-## Installation
+## ⚙️ Installation
 
 1. Open a terminal in the project folder.
 2. Create and activate a virtual environment if needed.
@@ -49,7 +49,7 @@ The dashboard is designed to turn raw retail data into actionable business insig
 pip install -r requirements.txt
 ```
 
-## Run the App
+## ▶️ Run the App
 
 From the project folder, run:
 
@@ -59,7 +59,7 @@ streamlit run Retail.py
 
 Then open the local URL shown in the terminal in your browser.
 
-## Data Requirements
+## 🧾 Data Requirements
 
 The dashboard expects a CSV file with columns such as:
 
@@ -73,9 +73,8 @@ The dashboard expects a CSV file with columns such as:
 - Unit Price
 - Transaction ID
 - Rating
- 
 
-## Business Use Case
+## 💼 Business Use Case
 
 This dashboard is useful for:
 
@@ -84,7 +83,7 @@ This dashboard is useful for:
 - analysts comparing customer segments
 - business teams planning inventory and promotions
 
-## Example Insights
+## 💡 Example Insights
 
 - identify top-performing branches
 - detect seasonal or daily sales patterns
@@ -100,6 +99,6 @@ This dashboard is useful for:
 
 - LinkedIn: https://linkedin.com/in/desmond-pimpong-563899433
 
-## License
+## 📄 License
 
 This project is intended for learning, portfolio development, and business analytics practice.
